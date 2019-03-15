@@ -1,6 +1,11 @@
 const express =require("express")
 const app = express()
 
+// connect to postgres database
+const {Pool} = require('pg')
+const dbUrl = process.env.DATABASE_URL || 'postgres://postgres:password@localhost:5432/dbname'
+const pool = new Pool({connectionString: dbUrl})
+
 
 app.get("/CreateUser", {req, res}=>{
 var first_name = req.query.first_name;
