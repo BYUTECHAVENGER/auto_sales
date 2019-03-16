@@ -23,7 +23,7 @@ pool.query(selectFromdb, array_of_user_data, (error, result)=>{
     if(error) console.log(error);
     else{
         var successfulQuery = result.rows
-        res.send("UserCreated")
+        res.render('UserCreated', successfulQuery)
     }
 });
 
