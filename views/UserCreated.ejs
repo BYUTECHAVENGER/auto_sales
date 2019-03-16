@@ -1,0 +1,42 @@
+<%    
+var row =successfulQuery[]         
+var first_name = row.first_name
+var last_name = row.last_name
+var user_name = row.user_name
+var tele = row.tele
+var passwd = row.passwd
+
+
+
+%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User Creation Reults</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>A user has been created</h1> 
+    <p>First Name <%=first_name%>
+    
+       Last Name <%=last_name%>
+
+       User Name <%=user_name%>
+
+       Telephone number <%=tele%>
+
+       Password <%=passwd%>
+       PLEASE WRITE DOWN YOUR PASSWROD! ! !
+
+
+
+    </p>
+
+
+</html>

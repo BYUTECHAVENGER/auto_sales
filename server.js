@@ -1,9 +1,12 @@
 const express =require("express")
 const app = express()
 
+
+app.set('view engine' ,'views')
+app.set('views', 'views')
 // connect to postgres database
 const {Pool} = require('pg')
-const dbUrl = process.env.DATABASE_URL || 'postgres://postgres:password@localhost:5432/dbname'
+const dbUrl = process.env.DATABASE_URL || 'postgres://postgres:KNOWNGOOD@localhost:5432/cars'
 const pool = new Pool({connectionString: dbUrl})
 
 app.use(express.static("public"))
@@ -15,21 +18,21 @@ var user_name = req.query.user_name;
 var tele = req.query.tele;
 var passwd = req.query.passwd;
 var array_of_user_data =[first_name, last_name, user_name, tele, passwd]
-var selectFromdb = "INSERT INTO vehicles (first_name, last_name, user_name, tele, passwd) Values ($1, $2, $3, $4, $5) "
-pool.query(selectFromdb, userInfo, (error, results)=>{
-    if(err) throw err;
+var selectFromdb = "INSERT INTO users (first_name, last_name, user_name, tele, passwd) Values ($1, $2, $3, $4, $5) "
+pool.query(selectFromdb, array_of_user_data, (error, result)=>{
+    if(error) console.log(error);
     else{
-        var succeedQuery = result.rows
-        res.render(succeedQuery)
+        var successfulQuery = result.rows
+        res.render("UserCreated", successfulQuery)
     }
-})
+});
 
 
 
 console.log("User name is: ")
 
 
-
+//var selectFromdb = "INSERT INTO vehicles (first_name, last_name, user_name, tele, passwd) Values ($1, $2, $3, $4, $5) "
 
 
 
