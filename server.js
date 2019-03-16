@@ -2,7 +2,7 @@ const express =require("express")
 const app = express()
 
 
-app.set('view engine','views')
+app.set('view engine','ejs')
 app.set('views', 'views')
 // connect to postgres database
 const {Pool} = require('pg')
@@ -22,8 +22,9 @@ var selectFromdb = "INSERT INTO users (first_name, last_name, user_name, tele, p
 pool.query(selectFromdb, array_of_user_data, (error, result)=>{
     if(error) console.log(error);
     else{
-        var successfulQuery = result.rows
+        var successfulQuery = {first_name:first_name, last_name:last_name, user_name:user_name, tele:tele, passwd:passwd}
         res.render('UserCreated', successfulQuery)
+
     }
 });
 
