@@ -2,7 +2,7 @@ const express =require("express")
 const app = express()
 
 
-app.set('view engine' ,'views')
+app.set('view engine','views')
 app.set('views', 'views')
 // connect to postgres database
 const {Pool} = require('pg')
@@ -23,7 +23,7 @@ pool.query(selectFromdb, array_of_user_data, (error, result)=>{
     if(error) console.log(error);
     else{
         var successfulQuery = result.rows
-        res.render("UserCreated", successfulQuery)
+        res.send("UserCreated")
     }
 });
 
@@ -39,4 +39,6 @@ console.log("User name is: ")
 });
 
 app.set("port", (process.env.PORT || 5000))
-app.listen(app.get)
+app.listen(app.get("port"), ()=>{
+    console.log("You are connected on port ", app.get("port"))
+})
