@@ -1,0 +1,25 @@
+{
+  "name": "auto_sales",
+  "version": "1.0.0",
+  "description": "Auto sales site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BYUTECHAVENGER/auto_sales.git"
+  },
+  "author": "PSNYDER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BYUTECHAVENGER/auto_sales/issues"
+  },
+  "homepage": "https://github.com/BYUTECHAVENGER/auto_sales#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "pg": "^7.9.0"
+  }
+}

@@ -20,3 +20,12 @@ INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES
 
 
 )
+
+CREATE TABLE users(
+id SERIAL PRIMARY KEY,
+first_name VARCHAR(255),
+last_name VARCHAR(255),
+user_name VARCHAR(255),
+tele INT(255),
+passwd VARCHAR(255),
+),
