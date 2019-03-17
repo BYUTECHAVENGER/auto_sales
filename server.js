@@ -19,6 +19,7 @@ var tele = req.query.tele;
 var passwd = req.query.passwd;
 var array_of_user_data =[first_name, last_name, user_name, tele, passwd]
 var selectFromdb = "INSERT INTO users (first_name, last_name, user_name, tele, passwd) Values ($1, $2, $3, $4, $5) "
+
 pool.query(selectFromdb, array_of_user_data, (error, result)=>{
     if(error) console.log(error);
     else{
@@ -27,6 +28,8 @@ pool.query(selectFromdb, array_of_user_data, (error, result)=>{
 
     }
 });
+
+
 
 
 
