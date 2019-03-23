@@ -1,6 +1,7 @@
  
 <%var Make = carChoice[0].make%>
-
+<%var Model = carChoice[0].model%> 
+<%var Color = carChoice[0].color%>
 
 
 
@@ -17,7 +18,22 @@
 <body>
     
 
-<h1><%=Make %></h1>
+<h1>YOUR REULTS</h1>
+
+
+
+<% for (let i = 0; i < carChoice.length; i++) { %>
+	
+        <%=carChoice[i].make %>
+        <br>
+        <%=carChoice[i].model %>
+        <br>
+        <%=carChoice[i].color %>
+
+        <hr>
+
+<% } %>
+
 
 
 
