@@ -37,12 +37,13 @@ app.get('/carChoice', function (req, res) {
     var Color = req.query.Color;
     var array_of_user_data = [Make, Model, Color]
     var selectFromdb = "SELECT * FROM vehicles WHERE make = $1 and model = $2 and color = $3"
-    res.send('Find_Your_Next_Automobile')
+    
 
     pool.query(selectFromdb, array_of_user_data, (error, result) => {
         if (error) console.log(error);
         else {
-            console.log(result.rows)
+            res.render('Search_Results', {carChoice:result.rows});
+
         }
     })
 })
