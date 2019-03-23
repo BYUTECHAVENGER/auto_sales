@@ -31,7 +31,7 @@ app.get("/CreateUser", (req, res) => {
     })
 })
 
-app.get('carChoice', function (req, res) {
+app.get('/carChoice', function (req, res) {
     var Make = req.query.Make;
     var Model = req.query.Model;
     var Color = req.query.Color;
