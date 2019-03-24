@@ -31,3 +31,15 @@ I added a footer!
 8. Please list any questions you have for the instructor regarding this assignment or this week's topic.
 I am not sure how to bring in an image when the user will create a new entry
 I am not sure how to add a response for NO DATA FOUND IN THE TABLE-now internal server error shows.
+
+
+AVAILABLE CARS:
+
+('Dodge', 'Dart','Orange', 2019, 'Coupe', 2, 22100);
+('Dodge', 'Challenger','Black', 2020, 'Coupe', 2, 41000);
+('Dodge', 'Ram 1500','Blue', 2004, 'P/U', 2, 2100);
+('Volvo', '240','Beige', 1990, 'Sedan', 4, 1900);
+('Fiat', '500','Red', 2004, 'Coupe', 2, 3100);
+('Honda', 'Civic','Purple', 2010, 'Sedan', 4, 3800);
+('Chevy', 'S10','Black', 2001, 'P/U', 2, 1700);
+('Ford', 'Fiesta','red', 1999, 'coupe', 2, 850);

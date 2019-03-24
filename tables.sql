@@ -26,5 +26,5 @@ INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES
 INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Fiat', '500','Red', 2004, 'Coupe', 2, 3100);
 INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Honda', 'Civic','Purple', 2010, 'Sedan', 4, 3800);
 INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Chevy', 'S10','Black', 2001, 'P/U', 2, 1700);
-INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Ford', 'Fiesta','red', 1999, 'coupe', 2, 850);
+INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Ford', 'Fiesta','Red', 1999, 'coupe', 2, 850);
 
