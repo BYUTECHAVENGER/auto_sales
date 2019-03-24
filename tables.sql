@@ -22,5 +22,9 @@ passwd VARCHAR(255)
 INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Dodge', 'Dart','Orange', 2019, 'Coupe', 2, 22100);
 INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Dodge', 'Challenger','Black', 2020, 'Coupe', 2, 41000);
 INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Dodge', 'Ram 1500','Blue', 2004, 'P/U', 2, 2100);
-
+INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Volvo', '240','Beige', 1990, 'Sedan', 4, 1900);
+INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Fiat', '500','Red', 2004, 'Coupe', 2, 3100);
+INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Honda', 'Civic','Purple', 2010, 'Sedan', 4, 3800);
+INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Chevy', 'S10','Black', 2001, 'P/U', 2, 1700);
+INSERT INTO Vehicles (make, model, color, manu_year, class, doors, price) VALUES('Ford', 'Fiesta','red', 1999, 'coupe', 2, 850);
 
