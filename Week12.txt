@@ -27,3 +27,5 @@ displaying the appropriate image for a searched automobile
 I have not made much progress, my wife and her struggles have been my focus for the alst few days.
 I am focusing on adding data as this is somethin I can handle at the moment.
 8. Please list any questions you have for the instructor regarding this assignment or this week's topic.
+
+ <!--<img><%=carChoice[i].img %></img>-->
