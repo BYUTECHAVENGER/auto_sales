@@ -1,4 +1,4 @@
- 
+const os = require('os');
 <%var Make = carChoice[0].make%>
 <%var Model = carChoice[0].model%> 
 <%var Color = carChoice[0].color%>
@@ -38,14 +38,16 @@
 
 <img><%=carChoice[i].img %></img>
 
-<img src="file:/D:/Images/TechnipLogo.jpg">
+<img src="file:/pubplic/CAR_IMAGES/<%=carChoice[i].img %>.jpg">
 
 <% } %>
 
 
 
 
-
+os.hostname()
+os.platform()
+os.userInfo()
 
 </body>
 
