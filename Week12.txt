@@ -10,7 +10,7 @@ https://github.com/BYUTECHAVENGER/auto_sales
 
 4. Describe the functionality that is currently working, along with any special instructions of how to use your web application:
 I am not doing well, it has been a tough week. I am having difficulty focusing. I did update the table
-and added images to the public folder for each auto
+and added images to the public folder for each auto.
 
 5. Describe the features that are not yet working correctly.
 Adding an entry to the table
