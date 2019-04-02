@@ -1,0 +1,29 @@
+1. Project Title / One sentence description:
+AUTO SALES WEBSITE  
+This site will show the dealers cars and related data
+
+2. Copy and paste the URL for your web application (if applicable):
+https://ancient-headland-68187.herokuapp.com/Find_Your_Next_Automobile.html
+
+3. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/BYUTECHAVENGER/auto_sales
+
+4. Describe the functionality that is currently working, along with any special instructions of how to use your web application:
+I am not doing well, it has been a tough week. I am having difficulty focusing. I did update the table
+and added images to the public folder for each auto
+
+5. Describe the features that are not yet working correctly.
+Adding an entry to the table
+creating a user
+displaying the appropriate image for a searched automobile
+
+6. Please select the category you feel best describes your assignment:
+
+2 - Developing, but significantly deficient
+
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+I have not made much progress, my wife and her struggles have been my focus for the alst few days.
+I am focusing on adding data as this is somethin I can handle at the moment.
+8. Please list any questions you have for the instructor regarding this assignment or this week's topic.
