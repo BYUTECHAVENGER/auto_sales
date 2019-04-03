@@ -32,9 +32,9 @@ app.get("/CreateUser", (req, res) => {
 })
 
 app.get('/carChoice', function (req, res) {
-    var Make = req.query.Make;
-    var Model = req.query.Model;
-    var Color = req.query.Color;
+    var Make = req.query.make;
+    var Model = req.query.model;
+    var Color = req.query.color;
     var array_of_user_data = [Make, Model, Color]
     var selectFromdb = "SELECT * FROM vehicles WHERE make = $1 and model = $2 and color = $3"
     

@@ -1,8 +1,8 @@
 function findCar() {
-    var make = $('#Make'=).val();
-    var model = $('#Model'=).val();
-    var color = $('#Color'=).val();
-    var query = {make: make ,model: model,color: color}
+    var Make = $('#Make').val();
+    var Model = $('#Model').val();
+    var Color = $('#Color').val();
+    var query = {make: Make ,model: Model,color: Color}
 
 
 
