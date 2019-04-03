@@ -12,7 +12,7 @@ function findCar() {
         console.log (result);
 
         var newCar = ""
-        for (let i = 0; i < carChoice.length; i++){
+        for (let i = 0; i < result.carChoice.length; i++){
 
             newCar += result.carChoice[i].make + "<br>" + result.carChoice[i].model
             + "<br>" +  result.carChoice[i].color +  "<hr>"
