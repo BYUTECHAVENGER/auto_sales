@@ -10,7 +10,7 @@ function findCar() {
 
     $.get('/carChoice', query, function(result) {
         console.log (result);
-    }
+    })
 // var newCar 
 // <h1>We offer the following auto options for you:</h1>
 
