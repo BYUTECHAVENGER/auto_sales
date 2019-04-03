@@ -16,10 +16,10 @@
 
     <fieldset>
         <legend>Select from the dropdowns below and click FIND MY CAR!</legend>
-        <form action='carChoice' method='get'>
+       
 
 
-            <select name="Make">
+            <select id ="Make">
                 <option value="volvo">Volvo</option>
                 <option value="Dodge">Dodge</option>
                 <option value="fiat">Fiat</option>
@@ -33,7 +33,7 @@
             </select>
 
 
-            <select name="Model">
+            <select id ="Model">
                 <option value="Ram 1500">Ram 1500</option>
                 <option value="Fleetwood">Fleetwood</option>
                 <option value="240">240</option>
@@ -51,7 +51,7 @@
                 
             </select>
 
-            <select name="Color">
+            <select id ="Color">
                 <option value="Blue">Blue</option>
                 <option value="Black">Black</option>
                 <option value="White">White</option>
@@ -69,12 +69,7 @@
 
             </select>
 
-            <input type="submit" value="SEARCH">
-        </form>
-
-
-
-
+            <button onClick="findCar()"></button>  
     </fieldset>
 
 
@@ -82,8 +77,12 @@
         onclick="window.location.href = 'https://ancient-headland-68187.herokuapp.com/User_account_creation_PauliesAutoSales.html';">Create
         account</button>
 
+
+        <div73>                   </div73>
     <!-- <button onclick="window.location.href = 'https://w3docs.com';">Click Here</button> -->
 </body>
+
+
 
 <div class="footer">
         <p>Paulie's Auto Sales &copy; 2019</p>

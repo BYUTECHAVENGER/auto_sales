@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-
+const os = require('os')
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
@@ -42,7 +42,7 @@ app.get('/carChoice', function (req, res) {
     pool.query(selectFromdb, array_of_user_data, (error, result) => {
         if (error) console.log(error);
         else {
-            res.render('Search_Results', {carChoice:result.rows});
+            res.send({carChoice:result.rows});
 
         }
     })
