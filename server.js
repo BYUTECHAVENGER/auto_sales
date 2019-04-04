@@ -1,6 +1,8 @@
 const express = require("express")
 const app = express()
 const os = require('os')
+app.use(express.urlencoded({extended: true}));//required to use .body
+
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
@@ -10,6 +12,27 @@ const dbUrl = process.env.DATABASE_URL || 'postgres://postgres:KNOWNGOOD@localho
 const pool = new Pool({ connectionString: dbUrl })
 
 app.use(express.static("public"))
+
+app.post("/UserLogin", (req,res) => {
+    var userName =  req.body.userName;
+    var userPass =  req.body.userPass;
+    var selectFromdb = "SELECT passwd FROM users WHERE userName = $1"
+    var array_of_user_data = [userName]
+
+
+    pool.query(selectFromdb, array_of_user_data, (error, result) => {
+        if (error) console.log(error);
+        else {
+            var userPassword = result.rows[0].passwd
+                if (userPass == userPassword) {
+                    res.send({successfulLogin: true})
+                }
+                else{res.send({successfulLogin: false})}
+            }
+    })
+
+
+})
 
 app.get("/CreateUser", (req, res) => {
     var first_name = req.query.first_name;
