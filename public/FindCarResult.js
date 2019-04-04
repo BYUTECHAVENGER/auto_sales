@@ -12,6 +12,8 @@ function findCar() {
         console.log (result);
 
         var newCar = "<h4>We have the following options to offer you: <h4>"
+
+        if
         for (let i = 0; i < result.carChoice.length; i++){
 
             newCar += result.carChoice[i].make + "<br>" + result.carChoice[i].model
