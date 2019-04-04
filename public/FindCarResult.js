@@ -18,7 +18,7 @@ function findCar() {
         for (let i = 0; i < result.carChoice.length; i++){
 
             newCar += result.carChoice[i].make + "<br>" + result.carChoice[i].model
-            + "<br>" +  result.carChoice[i].color + "<img src='./" + result.carChoice[i].img + ".jpg'>"
+            + "<br>" +  result.carChoice[i].color + "<img src='." + result.carChoice[i].img + ".jpg'>"
            + "<hr>"
 
            console.log (newCar)
