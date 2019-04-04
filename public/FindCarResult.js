@@ -2,6 +2,7 @@ function findCar() {
     var Make = $('#Make').val();
     var Model = $('#Model').val();
     var Color = $('#Color').val();
+    
     var query = {make: Make ,model: Model,color: Color}
 
 
@@ -17,7 +18,8 @@ function findCar() {
         for (let i = 0; i < result.carChoice.length; i++){
 
             newCar += result.carChoice[i].make + "<br>" + result.carChoice[i].model
-            + "<br>" +  result.carChoice[i].color +  "<hr>"
+            + "<br>" +  result.carChoice[i].color + "<img src='" + result.carChoice[i].img + ".jpg'>"
+           + "<hr>"
         }
         $('#newCar').html(newCar);
     })
