@@ -21,20 +21,7 @@ function findCar() {
     })
 
     
-// <h1>We offer the following auto options for you:</h1>
-
-
-
-// <% for (let i = 0; i < carChoice.length; i++) { %>
-	
-//         <%=carChoice[i].make %>
-//         <br>
-//         <%=carChoice[i].model %>
-//         <br>
-//         <%=carChoice[i].color %>
-//         <br>
-//         <%=carChoice[i].img %>
-// <% } %></br>
+<h1>We offer the following auto options for you </h1>
 
 
 
