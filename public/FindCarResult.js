@@ -14,7 +14,7 @@ function findCar() {
         var newCar = ""
         for (let i = 0; i < result.carChoice.length; i++){
 
-            newCar += result.carChoice[i].make + "<br>" + result.carChoice[i].model
+            newCar += "<h4>We have the following options to offer you: <h4>" + result.carChoice[i].make + "<br>" + result.carChoice[i].model
             + "<br>" +  result.carChoice[i].color +  "<hr>"
         }
         $('#newCar').html(newCar);
