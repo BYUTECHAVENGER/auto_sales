@@ -11,10 +11,10 @@ function findCar() {
     $.get('/carChoice', query, function(result) {
         console.log (result);
 
-        var newCar = ""
+        var newCar = "<h4>We have the following options to offer you: <h4>"
         for (let i = 0; i < result.carChoice.length; i++){
 
-            newCar += "<h4>We have the following options to offer you: <h4>" + result.carChoice[i].make + "<br>" + result.carChoice[i].model
+            newCar += result.carChoice[i].make + "<br>" + result.carChoice[i].model
             + "<br>" +  result.carChoice[i].color +  "<hr>"
         }
         $('#newCar').html(newCar);
