@@ -19,7 +19,8 @@ function findCar() {
 
             newCar += result.carChoice[i].make + "<br>" + result.carChoice[i].model
             + "<br>" +  result.carChoice[i].color + "<img src='" + result.carChoice[i].img + ".jpg'>"
-           + "<hr>"
+           + "<hr>" + <br> + <br> + <br>
+           
 
            console.log (newCar)
         }
