@@ -21,7 +21,7 @@ function findCar() {
     })
 
     
-<h1>We offer the following auto options for you </h1>
+
 
 
 
