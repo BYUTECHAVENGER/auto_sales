@@ -3,7 +3,8 @@ function login() {
     var userPass = $('#userPass').val();
 
     var query = { userName: userName, userPass: userPass }
-
+    console.log(userName)
+    console.log(userPass)
 
 
 

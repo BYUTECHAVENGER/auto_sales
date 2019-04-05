@@ -18,7 +18,8 @@ app.post("/UserLogin", (req,res) => {
     var userPass =  req.body.userPass;
     var selectFromdb = "SELECT passwd FROM users WHERE userName = $1"
     var array_of_user_data = [userName]
-
+    console.log(req.body.userName)
+    console.log(req.body.userPass)
 
     pool.query(selectFromdb, array_of_user_data, (error, result) => {
         if (error) console.log(error);
