@@ -16,7 +16,7 @@ app.use(express.static("public"))
 app.post("/UserLogin", (req,res) => {
     var userName =  req.body.userName;
     var userPass =  req.body.userPass;
-    var selectFromdb = "SELECT passwd FROM users WHERE userName = $1"
+    var selectFromdb = "SELECT passwd FROM users WHERE user_name = $1"
     var array_of_user_data = [userName]
     console.log(req.body.userName)
     console.log(req.body.userPass)
