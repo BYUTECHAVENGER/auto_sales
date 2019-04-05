@@ -35,6 +35,32 @@ app.post("/UserLogin", (req,res) => {
 
 
 })
+app.get("/CreateAuto", (req, res) => {
+    var Make = req.query.make;
+    var Model = req.query.model;
+    var Color = req.query.color;
+    var Year = req.query.manu_year;
+    var Class = req.query.class;
+    var Doors = req.query.doors;
+    var Price = req.query.price;
+    var URL = req.query.img;
+    var array_of_user_data = [Make, Model, Color, Year, Class, Doors, Price, URL]
+    var selectFromdb = "INSERT INTO vehicles (make, model, color, manu_year, class, doors, price, img) Values ($1, $2, $3, $4, $5, $6, $7, $8) "
+
+
+    pool.query(selectFromdb, array_of_user_data, (error, result) => {
+        if (error) {
+            res.send({message:"Automobile WAS NOT entered successfully into database of cars for sale, PLEASE RETRY"})
+        
+            console.log(error);
+        }
+        else {
+            
+            res.send({message:"Automobile entered successfully into database of cars for sale"})
+
+        }
+    })
+})
 
 app.get("/CreateUser", (req, res) => {
     var first_name = req.query.first_name;
