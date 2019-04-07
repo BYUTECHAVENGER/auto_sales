@@ -56,7 +56,7 @@ app.get("/CreateAuto", (req, res) => {
         }
         else {
             
-            res.send({message:"Automobile entered successfully into database of cars for sale"})
+            res.send({message:"Automobile entered successfully into database of cars for sale <br> REFRESH PAGE to add another automobile."})
 
         }
     })
