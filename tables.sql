@@ -7,7 +7,7 @@ manu_year INT,
 class VARCHAR(255),
 doors INT,
 price INT,
-img VARCHAR(255)
+img VARCHAR(700)
 );
 
 CREATE TABLE users(
