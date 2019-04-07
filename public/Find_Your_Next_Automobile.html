@@ -8,7 +8,8 @@
     <title>Find your next auto-Paulie's Auto Sales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="carsales.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--JQUERY LINK-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JQUERY LINK-->
     <script src="FindCarResult.js"></script>
 </head>
 
@@ -17,80 +18,84 @@
     <h1> Search here to find your next automobile </h1>
 
     <fieldset>
-        <legend>Select from the dropdowns below and click FIND MY CAR!</legend>
-       
+        <legend>Select from the dropdowns below and click SEARCH</legend>
 
 
-            <select id ="Make">
-                <option value="volvo">Volvo</option>
-                <option value="Dodge">Dodge</option>
-                <option value="fiat">Fiat</option>
-                <option value="Cadillac">Cadillac</option>
-                <option value="Ford">Ford</option>
-                <option value="Chevy">Chevrolet</option>
-                <option value="Honda">Honda</option>
-                <option value="Jeep">Jeep</option>
-                <option value="Chrysler">Chrysler</option>
-                <option value="">Honda</option>
-            </select>
+
+        <select id="Make">
+            <option value="volvo">Volvo</option>
+            <option value="Dodge">Dodge</option>
+            <option value="fiat">Fiat</option>
+            <option value="Cadillac">Cadillac</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevy">Chevrolet</option>
+            <option value="Honda">Honda</option>
+            <option value="Jeep">Jeep</option>
+            <option value="Chrysler">Chrysler</option>
+            <option value="">Honda</option>
+        </select>
 
 
-            <select id ="Model">
-                <option value="Ram 1500">Ram 1500</option>
-                <option value="Fleetwood">Fleetwood</option>
-                <option value="240">240</option>
-                <option value="CJ7">CJ7</option>
-                <option value="Neon">Neon</option>
-                <option value="Civic">Civic</option>
-                <option value="Pilot">Pilot</option>
-                <option value="Camaro">Camaro</option>
-                <option value="S10">S10</option>
-                <option value="Taurus">Taurus</option>
-                <option value="Fiesta">Fiesta</option>
-                <option value="300">300</option>
-                <option value="Challenger">Challenger</option>
-                <option value="Dart">Dart</option>
-                
-            </select>
+        <select id="Model">
+            <option value="Ram 1500">Ram 1500</option>
+            <option value="Fleetwood">Fleetwood</option>
+            <option value="240">240</option>
+            <option value="CJ7">CJ7</option>
+            <option value="Neon">Neon</option>
+            <option value="Civic">Civic</option>
+            <option value="Pilot">Pilot</option>
+            <option value="Camaro">Camaro</option>
+            <option value="S10">S10</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Fiesta">Fiesta</option>
+            <option value="300">300</option>
+            <option value="Challenger">Challenger</option>
+            <option value="Dart">Dart</option>
 
-            <select id ="Color">
-                <option value="Blue">Blue</option>
-                <option value="Black">Black</option>
-                <option value="White">White</option>
-                <option value="Yellow">Yellow</option>
-                <option value="Tan">Tan</option>
-                <option value="Maroon">Maroon</option>
-                <option value="Red">Red</option>
-                <option value="Green">Green</option>
-                <option value="Grey">Grey</option>
-                <option value="Brown">Brown</option>
-                <option value="Purple">Purple</option>
-                <option value="Silver">Silver</option>
-                <option value="Gold">Gold</option>
-                <option value="Beige">Beige</option>
+        </select>
 
-            </select>
+        <select id="Color">
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Tan">Tan</option>
+            <option value="Maroon">Maroon</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Grey">Grey</option>
+            <option value="Brown">Brown</option>
+            <option value="Purple">Purple</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+            <option value="Beige">Beige</option>
 
-            <button onclick="findCar()">Search for Cars</button>  
+        </select>
+
+        <button onclick="findCar()">SEARCH</button>
     </fieldset>
+
     <br>
     <br>
     <button
-        onclick="window.location.href = 'https://ancient-headland-68187.herokuapp.com/User_account_creation_PauliesAutoSales.html';">Create
-        account</button>
-        <br>
-        <br>
+        onclick="window.location.href = 'https://ancient-headland-68187.herokuapp.com/User_account_creation_PauliesAutoSales.html';">Create Account</button>
+    <br>
+    <br>
+    <button
+        onclick="window.location.href = 'https://ancient-headland-68187.herokuapp.com/User_Login.html';">Login to Add Automobiles</button>
+    <br>
+    <br>
 
 
-        <div73 id = "newCar">            </div73>
+    <div73 id="newCar"> </div73>
     <!-- <button onclick="window.location.href = 'https://w3docs.com';">Click Here</button> -->
 </body>
 
 
 
 <div class="footer">
-        <p>Paulie's Auto Sales &copy; 2019</p>
-      </div>
+    <p>Paulie's Auto Sales &copy; 2019</p>
+</div>
 
 
 </html>
