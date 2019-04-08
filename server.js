@@ -1,11 +1,16 @@
 const express = require("express")
 const app = express()
 const os = require('os')
+const session = require ("express-session")
 app.use(express.urlencoded({extended: true}));//required to use .body
-
-
 app.set('view engine', 'ejs')
 app.set('views', 'views')
+app.use(session({
+    secret: "Unicorns dont fly, Pegusus' can fly, but have no horn.",
+    resave: false,
+    saveUninitialized: true
+}));
+
 // connect to postgres database
 const { Pool } = require('pg')
 const dbUrl = process.env.DATABASE_URL || 'postgres://postgres:KNOWNGOOD@localhost:5432/cars'
@@ -27,6 +32,7 @@ app.post("/UserLogin", (req,res) => {
         else {
             var userPassword = result.rows[0].passwd
                 if (userPass == userPassword) {
+                    req.session.goodLogin = true
                     res.send({successfulLogin: true})
                 }
                 else{res.send({successfulLogin: false})}
