@@ -16,7 +16,7 @@ function login() {
         }
 
         else {
-            $('#FL').html("Incorrect Password, please try again");
+            $('#FL').html("Incorrect Username or Password, please try again");
         }
 
 

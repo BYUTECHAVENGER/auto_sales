@@ -30,6 +30,7 @@ app.post("/UserLogin", (req,res) => {
         // console.log(result.rows[0])
         if (error) console.log(error);
         else {
+            if (result.rows.length > 0){
             var userPassword = result.rows[0].passwd
                 if (userPass == userPassword) {
                     // req.session.goodLogin = true
@@ -37,6 +38,9 @@ app.post("/UserLogin", (req,res) => {
                 }
                 else{res.send({successfulLogin: false})}
             }
+            else{res.send({successfulLogin: false})}
+
+        }
     })
 
 
