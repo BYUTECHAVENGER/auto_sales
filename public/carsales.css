@@ -5,7 +5,16 @@ body {background-color: rgb(111, 102, 231);}
 
 
 
-
+.header
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(78, 78, 206);
+  color: white;
+  text-align: center;
+}
 
 
 .footer {
