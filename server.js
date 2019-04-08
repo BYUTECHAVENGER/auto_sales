@@ -72,12 +72,12 @@ app.get("/CreateAuto", (req, res) => {
     })
 })
 
-app.get("/CreateUser", (req, res) => {
-    var first_name = req.query.first_name;
-    var last_name = req.query.last_name;
-    var user_name = req.query.user_name;
-    var tele = req.query.tele;
-    var passwd = req.query.passwd;
+app.post("/CreateUser", (req, res) => {
+    var first_name = req.body.first_name;
+    var last_name = req.body.last_name;
+    var user_name = req.body.user_name;
+    var tele = req.body.tele;
+    var passwd = req.body.passwd;
     var array_of_user_data = [first_name, last_name, user_name, tele, passwd]
     var selectFromdb = "INSERT INTO users (first_name, last_name, user_name, tele, passwd) Values ($1, $2, $3, $4, $5) "
 
