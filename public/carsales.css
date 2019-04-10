@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
 } */
 
-body {
+.body {
   width: 600;
   background-color: rgb(111, 102, 231);
 } 
@@ -35,7 +35,7 @@ body {
   clear: both;
 }
 
-button{
+.button{
 color: rgb(19, 33, 34);
 border-radius: radius 5px;
 padding: 3px;
@@ -52,12 +52,12 @@ margin: 4px 2px;
 cursor: pointer;
 }
 
-nav{
+.nav{
 
 width: 180px;
 float: left;
-  padding:10
-
+padding:10;
+list-style-type: none;
 }
 
 
