@@ -4,7 +4,10 @@
   background-repeat: no-repeat;
 } */
 
-body {background-color: rgb(111, 102, 231);} 
+body {
+  width: 600px
+  color: rgb(111, 102, 231);
+} 
 
 
 
@@ -46,5 +49,14 @@ display: inline-block;
 font-size: 16px;
 margin: 4px 2px;
 cursor: pointer;
+}
+
+nav{
+
+width: 180px;
+float: left;
+  padding:10
+
+}
 
 
