@@ -12,9 +12,20 @@
     <script src="UserLogin.js"></script>
 </head>
 
-<div class= "header">
-        <p>Paulie's Auto Sales</p>
+<div class="header">
+        <p>
+            <h1> Paulie's Auto Sales </h1>
+        </p>
     </div>
+
+    <div class= "nav">
+            <H3>Navigation</H3>
+
+        <button onclick="window.location.href = 'https://ancient-headland-68187.herokuapp.com/Find_Your_Next_Automobile.html';">Search for Automobiles</button>
+        <br>
+        <br>
+        <button onclick="location.reload();">Refresh Page</button>
+            </div>
 <body>
 
     
@@ -23,7 +34,7 @@
     <BR>
     <br>
 
-    <h3>LOGIN</h3>
+    <h3>Login to add automobiles</h3>
 
     <br>
     <br>
@@ -34,7 +45,7 @@
     PASSWSORD: <input id="userPass" type="password">
     <br>
     <br>
-    <button onclick="login()">LOGIN to enter new car data</button>
+    <button onclick="login()">LOGIN </button>
     <br>
 
     <FailedLOGIN id="FL"></FailedLOGIN>
