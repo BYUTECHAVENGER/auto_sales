@@ -5,8 +5,8 @@
 } */
 
 body {
-  width: 600px
-  color: rgb(111, 102, 231);
+  width: 600;
+  background-color: rgb(111, 102, 231);
 } 
 
 
@@ -32,6 +32,7 @@ body {
   background-color: rgb(78, 78, 206);
   color: white;
   text-align: center;
+  clear: both;
 }
 
 button{
