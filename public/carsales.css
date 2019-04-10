@@ -1,19 +1,13 @@
 
-/* body {
-  background-image: url("maxresdefault.jpg");
-  background-repeat: no-repeat;
-} */
+body {
+  background-color: rgb(111, 102, 231);
+}
+
 
 .body {
   width: 600;
   background-color: rgb(111, 102, 231);
 } 
-
-.fieldset{
-  
-}
-
-
 
 .header{
   position: relative;
@@ -41,8 +35,7 @@
 color: rgb(19, 33, 34);
 border-radius: radius 5px;
 padding: 3px;
-
-background-color: rgb(41, 35, 61); /* Green */
+background-color: rgb(89, 71, 148); /* Green */
 border: 5px;
 color: white;
 padding: 3px;
@@ -55,7 +48,7 @@ cursor: pointer;
 }
 
 .nav{
-background-color: rgb(78, 78, 206);
+background-color: rgb(111, 102, 231);
 width: 180px;
 float: left;
 padding:10;
